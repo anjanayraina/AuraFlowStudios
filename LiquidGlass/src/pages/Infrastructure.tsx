@@ -43,7 +43,7 @@ export const Infrastructure: React.FC = () => {
            </div>
            <div className="order-1 lg:order-2 liquid-glass p-4 rounded-[3.5rem] bg-gradient-to-br from-blue-500/10 to-transparent border border-white/5">
               <div className="aspect-video rounded-[2.5rem] overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=1000" alt="Dashboard" className="w-full h-full object-cover opacity-40 grayscale" />
+                 <img src="/auraflow_systems_abstract.png" alt="Dashboard" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                  <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-24 h-24 rounded-full bg-blue-500/20 blur-3xl"></div>
                  </div>
@@ -55,7 +55,7 @@ export const Infrastructure: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
            <div className="liquid-glass p-4 rounded-[3.5rem] bg-gradient-to-br from-purple-500/10 to-transparent border border-white/5">
               <div className="aspect-video rounded-[2.5rem] overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000" alt="AI Engine" className="w-full h-full object-cover opacity-40 grayscale" />
+                 <img src="/ai_lead_engine_dashboard.png" alt="AI Engine" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                  <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-24 h-24 rounded-full bg-purple-500/20 blur-3xl"></div>
                  </div>
@@ -107,7 +107,7 @@ export const Infrastructure: React.FC = () => {
            </div>
            <div className="liquid-glass p-4 rounded-[3.5rem] bg-gradient-to-br from-cyan-500/10 to-transparent border border-white/5">
               <div className="aspect-video rounded-[2.5rem] overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=1000" alt="Datacenter" className="w-full h-full object-cover opacity-40 grayscale" />
+                 <img src="/zero_commission_ecosystem.png" alt="Datacenter" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                  <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-24 h-24 rounded-full bg-cyan-500/20 blur-3xl"></div>
                  </div>

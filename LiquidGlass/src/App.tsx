@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar, Footer } from './components/Layout';
+import { GlobalBackground } from './components/GlobalBackground';
 import { Home } from './pages/Home';
 import { Infrastructure } from './pages/Infrastructure';
 import { CaseStudies } from './pages/CaseStudies';
 import { Retainers } from './pages/Retainers';
 import { About } from './pages/About';
-import './App.css';
+import { Careers } from './pages/Careers';
 
-// Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   
@@ -23,7 +23,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-background flex flex-col">
+      <GlobalBackground />
+      <div className="min-h-screen bg-transparent text-white font-['Barlow'] antialiased overflow-x-hidden selection:bg-white selection:text-black flex flex-col">
         {/* Global Navbar */}
         <Navbar />
 
@@ -35,10 +36,10 @@ const App: React.FC = () => {
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/retainers" element={<Retainers />} />
             <Route path="/about" element={<About />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
         </main>
 
-        {/* Global Footer */}
         <Footer />
       </div>
     </Router>

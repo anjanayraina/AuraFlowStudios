@@ -17,6 +17,7 @@ export const Navbar: React.FC = () => {
         <Link to="/case-studies" className={`font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${location.pathname === '/case-studies' ? 'text-white' : 'text-white/40 hover:text-white'}`}>Case Studies</Link>
         <Link to="/retainers" className={`font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${location.pathname === '/retainers' ? 'text-white' : 'text-white/40 hover:text-white'}`}>Retainers</Link>
         <Link to="/about" className={`font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${location.pathname === '/about' ? 'text-white' : 'text-white/40 hover:text-white'}`}>About</Link>
+        <Link to="/careers" className={`font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${location.pathname === '/careers' ? 'text-white' : 'text-white/40 hover:text-white'}`}>Careers</Link>
       </div>
 
       <button className="liquid-glass hover:bg-white/10 hover:border-white/20 transition-all duration-700 ease-in-out active:scale-95 px-4 md:px-6 py-2 rounded-full font-label-caps text-[10px] md:text-xs text-white uppercase tracking-widest">
@@ -34,6 +35,7 @@ export const Footer: React.FC = () => {
         <Link to="/case-studies" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Case Studies</Link>
         <Link to="/retainers" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Retainers</Link>
         <Link to="/about" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">About</Link>
+        <Link to="/careers" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Careers</Link>
       </div>
       
       <div className="flex flex-col items-center gap-2">

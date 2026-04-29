@@ -90,9 +90,9 @@ export const Home: React.FC = () => {
           <div className="relative">
             <div className="liquid-glass-strong aspect-square rounded-[4rem] overflow-hidden border border-white/10 group">
               <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" 
+                src="/auraflow_systems_abstract.png" 
                 alt="Infrastructure" 
-                className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-all duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
               <div className="absolute bottom-12 left-12">
