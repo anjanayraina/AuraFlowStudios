@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, ArrowUpRight } from 'lucide-react';
 
 export const CaseStudies: React.FC = () => {
   const projects = [
