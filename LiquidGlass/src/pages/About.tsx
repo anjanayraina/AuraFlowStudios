@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Terminal, MapPin, ArrowRight, ShieldCheck, Cpu, Target } from 'lucide-react';
+import { Mail, Terminal, MapPin, Phone, Calendar, Globe, Zap, ShieldCheck } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
@@ -27,32 +27,51 @@ export const About: React.FC = () => {
             </div>
           </div>
           
-          <div className="mt-12 flex flex-col gap-6">
-             <div className="flex items-center gap-4 text-white/60">
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/5">
-                   <Terminal size={18} />
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+             <div className="flex flex-col gap-6">
+                <div className="flex items-center gap-4 text-white/60">
+                   <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/5">
+                      <Terminal size={18} />
+                   </div>
+                   <div className="flex flex-col">
+                      <span className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Education</span>
+                      <span className="text-sm font-['Barlow']">IIIT-Delhi</span>
+                   </div>
                 </div>
-                <div className="flex flex-col">
-                   <span className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Education</span>
-                   <span className="text-sm font-['Barlow']">IIIT-Delhi, Computer Science</span>
+                <div className="flex items-center gap-4 text-white/60">
+                   <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/5">
+                      <ShieldCheck size={18} />
+                   </div>
+                   <div className="flex flex-col">
+                      <span className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Experience</span>
+                      <span className="text-sm font-['Barlow']">NatWest Group</span>
+                   </div>
                 </div>
              </div>
-             <div className="flex items-center gap-4 text-white/60">
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/5">
-                   <ShieldCheck size={18} />
-                </div>
-                <div className="flex flex-col">
-                   <span className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Background</span>
-                   <span className="text-sm font-['Barlow']">NatWest Group, Web3 Security</span>
-                </div>
-             </div>
-             <div className="flex items-center gap-4 text-white/60">
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/5">
-                   <MapPin size={18} />
-                </div>
-                <div className="flex flex-col">
-                   <span className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Base</span>
-                   <span className="text-sm font-['Barlow']">Gurugram, Delhi NCR</span>
+
+             <div className="flex flex-col gap-4">
+                <a href="mailto:auraflowsolutions@gmail.com" className="flex items-center gap-3 text-white/40 hover:text-white transition-colors group">
+                   <Mail size={16} className="group-hover:text-primary" />
+                   <span className="text-[10px] font-bold uppercase tracking-widest">Email</span>
+                </a>
+                <a href="https://wa.me/918527270795" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/40 hover:text-white transition-colors group">
+                   <Phone size={16} className="group-hover:text-primary" />
+                   <span className="text-[10px] font-bold uppercase tracking-widest">WhatsApp</span>
+                </a>
+                <a href="http://calendly.com/anjanayraina326/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/40 hover:text-white transition-colors group">
+                   <Calendar size={16} className="group-hover:text-primary" />
+                   <span className="text-[10px] font-bold uppercase tracking-widest">Book a Call</span>
+                </a>
+                <div className="flex gap-4 mt-2">
+                   <a href="https://linkedin.com/in/anjanayraina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors">
+                      <Globe size={18} />
+                   </a>
+                   <a href="https://github.com/anjanayraina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors">
+                      <Terminal size={18} />
+                   </a>
+                   <a href="https://x.com/Anjanay_Raina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors">
+                      <Zap size={18} />
+                   </a>
                 </div>
              </div>
           </div>

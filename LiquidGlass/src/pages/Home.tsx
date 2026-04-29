@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronRight, Database, Bot, Zap, Shield, Cpu, ArrowRight, Server, BarChart3 } from 'lucide-react';
 
 export const Home: React.FC = () => {
@@ -34,12 +35,17 @@ export const Home: React.FC = () => {
           </p>
           
           <div className="flex flex-col md:flex-row gap-6 mb-24">
-            <button className="liquid-glass-strong px-10 py-5 rounded-full font-label-caps text-sm text-white uppercase tracking-[0.2em] hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+            <a 
+              href="http://calendly.com/anjanayraina326/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="liquid-glass-strong px-10 py-5 rounded-full font-label-caps text-sm text-white uppercase tracking-[0.2em] hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(255,255,255,0.1)] flex items-center justify-center"
+            >
               Audit My Infrastructure
-            </button>
-            <button className="px-10 py-5 rounded-full font-label-caps text-sm text-white/40 hover:text-white uppercase tracking-[0.2em] border border-white/5 hover:bg-white/5 transition-all duration-500 backdrop-blur-sm">
+            </a>
+            <Link to="/infrastructure" className="px-10 py-5 rounded-full font-label-caps text-sm text-white/40 hover:text-white uppercase tracking-[0.2em] border border-white/5 hover:bg-white/5 transition-all duration-500 backdrop-blur-sm flex items-center justify-center">
               Explore Our Pillars
-            </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-30 hover:opacity-60 transition-opacity duration-1000">
@@ -157,9 +163,14 @@ export const Home: React.FC = () => {
         <p className="text-white/40 text-xl md:text-2xl font-['Barlow'] max-w-2xl mb-16">
           We are currently accepting a limited number of high-impact partners for Q3 2026.
         </p>
-        <button className="liquid-glass-strong px-12 py-6 rounded-full font-label-caps text-md text-white uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-700">
+        <a 
+          href="http://calendly.com/anjanayraina326/30min" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="liquid-glass-strong px-12 py-6 rounded-full font-label-caps text-md text-white uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-700"
+        >
           Begin Strategic Audit
-        </button>
+        </a>
       </section>
     </div>
   );

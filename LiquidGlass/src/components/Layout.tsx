@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Grid3X3 } from 'lucide-react';
+import { Mail, Globe, Terminal, Zap } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const location = useLocation();
@@ -20,16 +20,23 @@ export const Navbar: React.FC = () => {
         <Link to="/careers" className={`font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${location.pathname === '/careers' ? 'text-white' : 'text-white/40 hover:text-white'}`}>Careers</Link>
       </div>
 
-      <button className="liquid-glass hover:bg-white/10 hover:border-white/20 transition-all duration-700 ease-in-out active:scale-95 px-4 md:px-6 py-2 rounded-full font-label-caps text-[10px] md:text-xs text-white uppercase tracking-widest">
+      <a 
+        href="http://calendly.com/anjanayraina326/30min" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="liquid-glass hover:bg-white/10 hover:border-white/20 transition-all duration-700 ease-in-out active:scale-95 px-4 md:px-6 py-2 rounded-full font-label-caps text-[10px] md:text-xs text-white uppercase tracking-widest"
+      >
         Audit My Infrastructure
-      </button>
+      </a>
     </nav>
   );
 };
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full px-12 py-24 flex flex-col items-center gap-12 bg-black relative border-t border-white/10 z-10">
+    <footer className="w-full px-12 py-24 flex flex-col items-center gap-12 bg-black relative border-t border-white/10 z-10 overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+      
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <Link to="/infrastructure" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Infrastructure</Link>
         <Link to="/case-studies" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Case Studies</Link>
@@ -37,13 +44,20 @@ export const Footer: React.FC = () => {
         <Link to="/about" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">About</Link>
         <Link to="/careers" className="font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors duration-500">Careers</Link>
       </div>
+
+      <div className="flex gap-10">
+        <a href="mailto:auraflowsolutions@gmail.com" className="text-white/20 hover:text-white transition-colors"><Mail size={20} /></a>
+        <a href="https://linkedin.com/in/anjanayraina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors"><Globe size={20} /></a>
+        <a href="https://github.com/anjanayraina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors"><Terminal size={20} /></a>
+        <a href="https://x.com/Anjanay_Raina" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors"><Zap size={20} /></a>
+      </div>
       
       <div className="flex flex-col items-center gap-2">
         <div className="text-white/30 font-['Barlow'] font-semibold text-[10px] tracking-[0.2em] uppercase text-center">
           © 2026 AURAFLOW STUDIOS. CURATING THE FUTURE.
         </div>
-        <div className="text-white/20 font-['Barlow'] font-semibold text-[8px] tracking-[0.2em] uppercase text-center">
-          ENTERPRISE-GRADE AI & BACKEND ARCHITECTURE. BUILT FOR SCALE.
+        <div className="text-white/20 font-['Barlow'] font-semibold text-[8px] tracking-[0.2em] uppercase text-center max-w-md">
+          ENTERPRISE-GRADE AI & BACKEND ARCHITECTURE. +91 85272 70795
         </div>
       </div>
     </footer>
