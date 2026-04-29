@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
             <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" type="video/mp4"/>
           </video>
         </div>
-        <div className="video-overlay bg-gradient-to-b from-background/90 via-background/20 to-background"></div>
+        <div className="video-overlay bg-gradient-to-b from-background/60 via-transparent to-background"></div>
         
         {/* Floating Glass Orbs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
